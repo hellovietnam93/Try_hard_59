@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem "rails", "~> 5.0.2"
+gem "bootstrap-sass", "3.3.6"
 gem "sqlite3"
 gem "puma", "~> 3.0"
 gem "sass-rails", "~> 5.0"
@@ -20,6 +21,7 @@ group :development, :test do
   gem "minitest-reporters", "1.1.9"
   gem "guard", "2.13.0"
   gem "guard-minitest", "2.4.4"
+  gem "rails-controller-testing"
 end
 
 group :development do
