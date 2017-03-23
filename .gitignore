@@ -22,3 +22,6 @@
 
 /config/secrets.yml
 /config/database.yml
+/Guardfile
+# Ignore Spring files.
+/spring/*.pid
