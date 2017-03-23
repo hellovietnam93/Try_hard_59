@@ -19,5 +19,9 @@
 
 # Ignore Byebug command history file.
 .byebug_history
-/config/database.yml
-/config/secrets.yml
+
+config/secrets.yml
+config/database.yml
+/Guardfile
+# Ignore Spring files.
+/spring/*.pid
