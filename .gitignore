@@ -42,3 +42,8 @@ bower.json
 .byebug_history
 config/database.yml
 config/secrets.yml
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
