@@ -13,6 +13,5 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_template "users/new"
     assert_select "div#<CSS id for error explanation>"
     assert_select "div.<CSS class for field with error>"
-    assert is_logged_in?
   end
 end
