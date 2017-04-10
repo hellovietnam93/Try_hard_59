@@ -7,7 +7,7 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: {maximum: 255},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: 6}
+  validates :password, presence: true, length: {minimum: 6}, allow_blank: true
 
   has_secure_password
 
@@ -23,9 +23,13 @@ class User < ApplicationRecord
     end
   end
 
+  scope :with_few_attrs, -> do
+    User.select(:id, :name, :email)
+  end
+
   def remember
     self.remember_token = User.new_token
-    update_attribute :remember_digest, User.digest(remember_token)
+    update_attributes remember_digest: User.digest(remember_token)
   end
 
   def authenticated? remember_token
