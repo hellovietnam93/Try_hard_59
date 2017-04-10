@@ -1,0 +1,11 @@
+<tr>
+  <th scope="row"><%= link_to user.id, user %></th>
+  <td><%= gravatar_for user, size: 80 %></td>
+  <td><%= link_to user.name, user %></td>
+  <td>
+    <% if current_user.is_admin? && !user.current_user?(current_user) %>
+      <%= link_to "Delete", user, method: :delete,
+        data: {confirm: "You sure?"} %>
+    <% end %>
+  </td>
+</tr>

@@ -3,13 +3,13 @@ class User < ApplicationRecord
 
   before_save {email.downcase!}
 
-  validates :name, presence: true, length: {minimum: 6, maximum: 50}
-
   VALID_EMAIL_REGEX = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+
+  validates :name, presence: true, length: {minimum: 6, maximum: 50}
   validates :email, presence: true, length: {maximum: 255},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :email, presence: true
-  validates :password, presence: true, length: {minimum:6}
+  validates :password, presence: true, length: {minimum:6}, allow_blank: true
 
   has_secure_password
 
@@ -25,9 +25,13 @@ class User < ApplicationRecord
     end
   end
 
+  def current_user? user
+    user == self
+  end
+
   def remember
     self.remember_token = User.new_token
-    update_attribute :remember_digest, User.digest(remember_token)
+    update_attributes remember_digest: User.digest(remember_token)
   end
 
   def authenticated? remember_token

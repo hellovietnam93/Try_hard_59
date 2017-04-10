@@ -1,0 +1,23 @@
+<% provide :title, "All users" %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th scope="row">User ID</th>
+        <th>Avatar</th>
+        <th>User Name</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= render @users %>
+    </tbody>
+  </table>
+</div>
+
+<%= will_paginate %>
