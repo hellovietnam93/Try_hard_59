@@ -57,7 +57,7 @@ p {
 
 
 /* header */
-#logo {
+.logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -145,8 +145,8 @@ aside {
 /* forms */
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
   margin-bottom: 15px;
+  width: 100%;
   @include box_sizing;
 }
 
@@ -154,7 +154,7 @@ input {
   height: auto !important;
 }
 
-#error_explanation {
+.error-explanation {
   color: red;
   ul {
     color: red;
@@ -167,4 +167,17 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-bottom: 10px -10px;
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+
+.session-remember-me {
+  margin-left: 0 !important;
+  width: auto;
 }
