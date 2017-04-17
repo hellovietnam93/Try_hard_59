@@ -1,0 +1,19 @@
+vi:
+  hello: "Xin Chào"
+  mailer:
+    message_: "Chào mừng đến với Sample App"
+  message:
+    update: "Cập nhật thông tin"
+    all_users: "Tất cả tài khoản"
+    users_deleted: "Đã xóa"
+    users_deleted!: "Không thể xóa"
+    pl_log_in: "Xin mời đăng nhập"
+    log_out: "Đăng xuất"
+    sure?: "Xóa ?"
+    user_not_exist: "Tài khoản không tồn tại"
+  title:
+    users: "Người dùng"
+    profile: "Thông tin cá nhận"
+    settings: "Cài đặt"
+  user_setting:
+    change: "Thay đổi"
