@@ -5,10 +5,12 @@ class UsersController < ApplicationController
   before_action :correct_user, only: [:edit, :update]
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.select(:id, :name, :email).where(activated: true)
+      .order(created_at: :asc).paginate(page: params[:page], per_page: 15)
   end
 
   def show
+    redirect_to root_url unless @user.activated?
   end
 
   def new
@@ -18,9 +20,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = "Welcome to the Sample App!"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "info.activation"
+      redirect_to root_url
     else
       render :new
     end
@@ -31,7 +33,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update_attributes user_params
-      flash[:success] = "Profile Updated!"
+      flash[:success] = t "success.update"
       redirect_to @user
     else
       render :edit
@@ -40,7 +42,7 @@ class UsersController < ApplicationController
 
   def destroy
     @user.destroy
-    flash[:success] = "User deleted"
+    flash[:success] = t "success.delete"
     redirect_to users_url
   end
 
@@ -54,7 +56,7 @@ class UsersController < ApplicationController
   def find_user
     @user = User.find_by id: params[:id]
     unless @user
-      flash[:danger] = "User #{params[:id]} not found!"
+      flash[:danger] = t "danger.find_user", param: params[:id]
       redirect_to root_path
     end
   end
@@ -62,21 +64,21 @@ class UsersController < ApplicationController
   def logged_in_user
     unless logged_in?
       store_location
-      flash[:danger] = "Please log in."
+      flash[:danger] = t "danger.log_in"
       redirect_to login_url
     end
   end
 
   def correct_user
     unless @user.current_user? current_user
-      flash[:danger] = "Bạn không được phép truy cập trang này"
+      flash[:danger] = t "danger.access"
       redirect_to root_path
     end
   end
 
   def admin_user
     unless current_user.is_admin?
-      flash[:danger] = "Bạn không có quyền truy cập trang này"
+      flash[:danger] = t "danger.access"
       redirect_to users_path
     end
   end

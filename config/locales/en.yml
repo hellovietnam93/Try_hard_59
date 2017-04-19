@@ -21,3 +21,27 @@
 
 en:
   hello: "Hello world"
+  mailer:
+    title: "Sample App"
+    greeting: "Hi %{username},"
+    message: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate: "Activate"
+    activation: "Account activation"
+  password_reset:
+    hello: "Hi"
+    greeting: "<%= @greeting %>, find me in app/views/user_mailer/password_reset.text.erb"
+  warning:
+    activation: "Account not activated. Check your email for the activation link."
+  success:
+    activation: "Account activated!"
+    update: "Profile Updated!"
+    delete: "User deleted"
+  danger:
+    activation: "Invalid activation link"
+    email: "Invalid email/password combination"
+    find_user: "User %{param} not found!"
+    log_in: "Please log in."
+    access: "You are not allowed to access this page."
+  info:
+    activation: "Please check your email to activate your account."
+

@@ -1,0 +1,25 @@
+vi:
+  hello: "Hello world"
+  mailer:
+    title: "Sample App"
+    greeting: "Chào %{username},"
+    message: "Chào mừng đến Sample App! Click vào link dưới để kích hoạt tài khoản của bạn:"
+    activate: "Kích hoạt"
+    activation: "Kích hoạt tài khoản"
+  password_reset:
+    hello: "Chào"
+    greeting: "<%= @greeting %>, find me in app/views/user_mailer/password_reset.text.erb"
+  warning:
+    activation: "Tài khoản chưa được kích hoạt. Xin hãy kiểm tra email."
+  success:
+    activation: "Tài khoản đã kích hoạt!"
+    update: "Đã cập nhật Profile!"
+    delete: "Đã xóa tài khoản"
+  danger:
+    activation: "Đường dẫn kích hoạt không đúng!"
+    email: "Sai email hoặc mật khẩu"
+    find_user: "%{param} Không tìm thấy!"
+    log_in: "Hãy đăng nhập"
+    access: "Bạn không được truy cập trang này"
+  info:
+    activation: "Hãy kiểm tra email để lấy đường dẫn kích hoạt"
