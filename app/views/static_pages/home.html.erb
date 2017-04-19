@@ -1,12 +1,13 @@
-<% provide :title, "Home" %>
+<% provide :title, t(".header") %>
 <div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+  <h1><%= t ".title" %></h1>
   <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+    <%= t ".note" %>
+    <%= link_to "Ruby on Rails Tutorial", "http://www.railstutorial.org/" %>
   </h2>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 <%= link_to image_tag("rails.png", alt: "Rails logo"),
-'http://rubyonrails.org/' %>
+"http://rubyonrails.org/" %>
+<%= link_to t(".en"), locale: "en"%>
+<%= link_to t(".vi"), locale: "vi"%>

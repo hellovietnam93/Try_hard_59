@@ -1,23 +1,62 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      title: "Welcome to the Sample App"
+      signup: "Sign up now!"
+      note: "This is the home page for the"
+      en: "English"
+      vi: "Vietnamese"
+      header: "Home"
+    contact:
+      content: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      title: "Contact"
+      contact_page: "contact page"
+    help:
+      help1: "Get help on the Ruby on Rails Tutorial at the"
+      help2: "To get help on this sample app, see the"
+      title: "Help"
+    about:
+      title: "About"
+  users:
+    welcome: "Welcome to the Sample App!"
+    profile_updated: "Profile updated"
+    user_deleted: "User deleted"
+    delete_failed: "Delete failed"
+    user_not_found: "User not found!"
+    login: "Please login"
+    edit: "You can not edit user"
+    form:
+      confirm_pass: "Confirmation"
+      save_change: "Save changes"
+    user:
+      delete: "delete"
+      confirm: "You sure?"
+    edit:
+      title: "Edit user"
+      change: "Change"
+      update: "Update your profile"
+    index:
+      title: "All users"
+      image: "Image"
+      name: "Name"
+    new:
+      title: "Sign up"
+  layouts:
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+      users: "Users"
+      logout: "Log out"
+      account: "Account"
+      profile: "Profile"
+      setting: "Settings"
+      name: "Sample App"
+    footer:
+      about: "About"
+      contact: "Contact"
+      new: "News"
+  sessions:
+    new:
+      signup: "Sign up now!"
+      login: "Log in"
