@@ -1,14 +1,13 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Help", help_path %></li>
-        <li><%= link_to "Log in", login_path %></li>
-        <li><%= link_to "About", about_path %></li>
-         <li><%= link_to "Contact", contact_path %></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<footer class="footer">
+  <small>
+    <%= t ".title1" %><a href="http://www.railstutorial.org/"><%= t".title2" %></a>
+    <%= t ".title3" %><a href="http://www.michaelhartl.com/"><%= t".title4" %></a>><%= t ".login" %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t ".about", about_path %></li>
+      <li><%= link_to t ".contact", contact_path %></li>
+      <li><a href="http://news.railstutorial.org/"><%= t ".title5" %></a></li>
+    </ul>
+  </nav>
+</footer>

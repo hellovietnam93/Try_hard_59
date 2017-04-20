@@ -196,3 +196,13 @@ input {
   margin-left: 0;
   width: auto;
 }
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    padding: 10px 0;
+    overflow: auto;
+  }
+}

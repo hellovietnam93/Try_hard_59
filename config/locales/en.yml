@@ -20,4 +20,89 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      welcome: "Welcome to the Sample App"
+      english: "English"
+      vietnamese: "vietnamese"
+      home: "Home"
+      signup: "Sign up now!"
+      title1: "This is the home page for the"
+      title2: "Ruby on Rails Tutorial"
+      title3: "sample application."
+    about:
+      about: "about"
+      home: "home"
+      title1: "The"
+      title2: "Ruby on Rails Tutorial"
+      title3: "is a"
+      title4: "book"
+      title5: "and"
+      title6: "screencast series"
+      title7: "to teach web development with"
+      title8: "Ruby on Rails"
+      title9: "This is the sample application for the tutorial."
+    help:
+      help: "help"
+      title1: "Get help on the Ruby on Rails Tutorial at the"
+      title2: "Rails Tutorial help section"
+      title3: ".To get help on this sample app, see the"
+      title4: "Ruby on Rails Tutorial"
+      title5: "book"
+    contact:
+      contact: "contact"
+      title: "Contact the Ruby on Rails Tutorial about the sample app at the"
+  users:
+    update:
+      update: "Profile updated"
+    welcome:
+      welcome: "Welcome to the Sample App"
+    destroy:
+      destroy: "User deleted"
+    cdestroy:
+      cannot_destroy: "Can't not delete"
+    login:
+      login: "Please log in"
+    find:
+      find: "User not exist"
+    edit:
+      edit: "Edit user"
+      change: "change"
+      save: "save changes"
+      title: "Update your profile"
+    _user:
+      sure: "You sure?"
+      delete: "delete"
+    index:
+      user: "All users"
+    new:
+      signup: "Sign up"
+      create: "Create my account"
+  sessions:
+    new:
+      login: "login"
+      email: "email"
+      password: "password"
+      title1: "Remember me on this computer"
+      title2: "New user?"
+      linklogin: "Log in"
+      linksignup: "Sign up now!"
+  layouts:
+    header:
+      title: "Account"
+      users: "users"
+      link1: "sample app"
+      link2: "Home"
+      link3: "Help"
+      link4: "Profile"
+      link5: "Settings"
+      link6: "Log out"
+      link7: "Log in"
+    footer:
+      about: "about"
+      contact: "contact"
+      title2: "The"
+      title2: "Ruby on Rails Tutorial"
+      title3: "by"
+      title4: "Michael Hartl"
+      title5: "News"
