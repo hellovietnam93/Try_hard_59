@@ -1,9 +1,11 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, :correct_user, only: [:edit, :update]
-  before_action :find_user, only: [:show, :edit, :update]
+  before_action :logged_in_user, except: [:show, :new, :create]
+  before_action :verify_user, only: [:edit, :update]
+  before_action :load_user, except: [:index, :new, :create]
+  before_action :admin_user, only: :destroy
 
-   def index
-    @users = User.paginate page: params[:page]
+  def index
+    @users = User.select(:id, :name, :email).order(:name).paginate page: params[:page]
   end
 
   def show
@@ -36,6 +38,15 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    if @user.destroy
+      flash[:success] = "User deleted!"
+    else
+      flash[:danger] = "Delete unsuccessfull!"
+    end
+    redirect_to users_url
+  end
+
   private
 
   def user_params
@@ -43,11 +54,13 @@ class UsersController < ApplicationController
     :password_confirmation
   end
 
-  def find_user
+  def load_user
     @user = User.find_by id: params[:id]
     #rescue ActiveRecord::RecordNotFound
-    #flash[:dander] = "Your user_id: #{params[:id]} did not exist"
-    #redirect_to root_url
+    unless @user
+      flash[:dander] = "Your user_id: #{params[:id]} did not exist"
+      redirect_to root_url
+    end
   end
 
   def logged_in_user
@@ -57,11 +70,15 @@ class UsersController < ApplicationController
     end
   end
 
-  def correct_user
+  def verify_user
     @user = User.find_by id: params[:id]
     unless @user.current_user? current_user
       flash[:danger] = "You cannot edit user_id: #{params[:id]}!"
       redirect_to @user
     end
+  end
+
+  def admin_user
+    redirect_to root_url unless current_user.admin?
   end
 end
