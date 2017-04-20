@@ -21,3 +21,8 @@
 
 en:
   hello: "Hello world"
+  remember_me: "Remember me on this computer"
+  signin_danger: "Invalid email/password combination"
+  signup_success: "Welcome to the Sample App!"
+  login: "Log in"
+
