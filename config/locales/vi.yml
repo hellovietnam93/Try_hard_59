@@ -1,0 +1,4 @@
+vi:
+  static_pages:
+    home:
+      hello: "Chao ban den voi trang Web Vi du"
