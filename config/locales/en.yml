@@ -24,3 +24,7 @@ en:
   remember: "Remember me on this computer"
   log_in: "Log in"
   sign_up: "Sign up now!"
+  welcome: "Welcome to the Sample App!"
+  deleted: "User deleted"
+  updated: "Profile updated"
+  pls_log_in: "Please log in."
