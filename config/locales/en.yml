@@ -21,3 +21,45 @@
 
 en:
   hello: "Hello world"
+  user:
+    comfirm: "Are You Sure ?"
+    new:
+      title: "Sign up"
+      button_text: "Create my account"
+    index:
+      title: "All users"
+    edit:
+      title: "Edit user"
+      button_text: "Save changes"
+      update: "Update your profile"
+  mailer:
+    title: "sample app"
+    greeting: "Hi %{username},"
+    message: "Welcome to the Sample App!
+      Click on the link below to activate your account:"
+    activate: "Activate"
+    activation: "Account activation"
+  danger:
+    activation: "Invalid activation link"
+    destroy: "Delete fail"
+    find_user: "User %{param} not found!"
+    log_in: "Please log in."
+    correct_user: "Not correct user"
+    admin_user: "Not admin user"
+  warning: "Account not activated. Check your email for the activation link."
+  info: "Please check your email to activate your account."
+  success:
+    update: "Profile update"
+    destroy: "User deleted"
+    activate: "Account activated!"
+  layout:
+    header:
+      english: "English"
+      vietnamese: "Vietnamese"
+      home: "Home"
+      help: "Help"
+      user: "Users"
+      profile: "Profile"
+      setting: "Setting"
+      login: "Log in"
+      logout: "Log out"

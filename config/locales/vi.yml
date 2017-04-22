@@ -1,0 +1,34 @@
+vi:
+  hello: "Hello world"
+  user:
+    comfirm: "Bạn xác nhận xóa tài khoản này"
+    new:
+      title: "Đăng Ký"
+      button_text: "Tạo tài khoản"
+    index:
+      title: "Tất cả tài khoản"
+    edit:
+      title: "Điều chỉnh thông tin"
+      button_text: "Lưu thay đổi"
+      update: "Cập nhật "
+  mailer:
+    title: "Sample App"
+    greeting: "Xin chào %{username},"
+    message: "Chào mừng đến với Sample App!
+      Nhấn vào liên kết bên dưới để kích hoạt tài khoản của bạn"
+    activate: "Kích hoạt"
+    activation: "Kích hoạt tài khoản"
+  danger:
+    activation: "Kích hoạt thất bại"
+    destroy: "Không xóa được"
+    find_user: "Tài khoản %{param} không tồn tại!"
+    log_in: "Xin mời đăng nhật."
+    correct_user: "Không phải tài khoản đúng"
+    admin_user: "Không phải tài khoản admin"
+  warning: "Tài khoản chưa được kích hoạt.
+    Hãy kiểm tra mail của bạn để kích hoạt."
+  info: "Hãy kiểm tra mail của bạn để kích hoạt."
+  success:
+    update: "Thông tin được cập nhật"
+    destroy: "Tài khoản xóa thành công"
+    activate: "Kích hoạt thành công"
