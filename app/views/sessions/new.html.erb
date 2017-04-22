@@ -16,9 +16,9 @@
         <span><%= t :remember%></span>
       <% end %>
 
-      <%= f.submit :log_in, class: "btn btn-primary" %>
+      <%= f.submit t :log_in, class: "btn btn-primary" %>
     <% end %>
 
-    <p>New user? <%= link_to :sign_up, signup_path %></p>
+    <p>New user? <%= link_to t :sign_up, signup_path %></p>
   </div>
 </div>
