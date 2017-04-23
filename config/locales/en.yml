@@ -21,3 +21,29 @@
 
 en:
   hello: "Hello world"
+  sessions:
+    create:
+      flash:
+        wrong_pw_email_login: "Invalid email/password combination"
+  users:
+    create:
+      flash:
+        checkemail: "Please check email to activate your account" 
+    update:
+      flash:
+        profile_updated: "Profile updated"
+    destroy:
+      flash:
+        users_destroyed: "User deleted"
+        cant_destroy: "Cannot delete"
+    edit:
+      flash:
+        loggin_first: "You must log in first"
+    show:
+      flash:
+        cant_find_user: "Cannot find user"
+  account_activations:
+    edit:
+      flash:
+        success_activate: "Account activated!"
+        invalid_activate: "Invalid activation link"
