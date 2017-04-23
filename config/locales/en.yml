@@ -21,3 +21,32 @@
 
 en:
   hello: "Hello world"
+  sessions:
+    create:
+      flash:
+        wrong_password_email_login: "Invalid email/password combination"
+  users:
+    create:
+      flash:
+        welcome: "Welcome to Same App"
+  static_pages:
+    home:
+      hello_app: "Welcome to My App"
+      sign_up: "Sign up now"
+  sessions:
+    new:
+      log_in: "Login"
+      sign_up_now: "Sign up now"
+      login: "Log in"
+      new_user: "New User?"
+  layouts:
+    header:
+      sample_app: "Sample app"
+      home: "Home"
+      help: "Help"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
+      log_in: "Log in"
+      account: "Account"
