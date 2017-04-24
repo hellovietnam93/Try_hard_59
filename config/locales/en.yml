@@ -25,4 +25,9 @@ en:
   signin_danger: "Invalid email/password combination"
   signup_success: "Welcome to the Sample App!"
   login: "Log in"
+  signup: "Sign up"
+  update_profile: "Update your profile"
+  update_success: "Profile updated"
+  login_danger: "Please log in"
+  delete_user: "User deleted"
 

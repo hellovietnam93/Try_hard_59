@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to user
     else
       flash[:danger] = t :signin_danger
-      render "new"
+      render :new
     end
   end
 
