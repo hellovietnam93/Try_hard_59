@@ -25,10 +25,42 @@ vi:
     log_in: "Xin mời đăng nhật."
     correct_user: "Không phải tài khoản đúng"
     admin_user: "Không phải tài khoản admin"
+    email_notfound: "Không tìm thấy email này"
+    expired: "Link thay đổi mật khẩu đã hết hạn."
   warning: "Tài khoản chưa được kích hoạt.
     Hãy kiểm tra mail của bạn để kích hoạt."
-  info: "Hãy kiểm tra mail của bạn để kích hoạt."
+  info:
+    activate: "Hãy kiểm tra mail của bạn để kích hoạt."
+    reset_pass: “Link thay đổi mật khẩu đã được gửi vào mail của b"ạn
   success:
     update: "Thông tin được cập nhật"
     destroy: "Tài khoản xóa thành công"
     activate: "Kích hoạt thành công"
+    reset: "Mật khẩu đã được thay đổi"
+  layout:
+    header:
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+      home: "Trang chủ"
+      help: "Trợ Giúp "
+      user: "Người Dùng"
+      profile: "Hồ sơ"
+      setting: "Cập nhật"
+      login: "Đăng Nhập"
+      logout: "Đăng Xuất"
+      account: "Tài Khoản"
+  pass_reset:
+    edit:
+      title: "Thay đổi mật khẩu"
+      update: "Cập nhật mật khẩu "
+      confirm: "Xác Nhận"
+    new:
+      title: "Quên mật khẩu"
+      submit: "Submit"
+    mailer:
+      message1: "Để thay đổi mật khẩu hãy click vào đường dẫn dưới đây :"
+      message2: “Link sẽ hết hạn sau 2 ngày"
+      message3: "Nếu bạn không yêu cầu thay đổi mật khẩu,
+        hãy bỏ qua email này và mật khẩu của bạn vẫn sẽ giữ nguyên."
+  session:
+    new: "Đăng ký !"
