@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.select(:name, :email, :id).paginate page: params[:page]
   end
 
   def show
@@ -18,9 +18,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = "Welcome to the Ruby K59"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "user_controller.user_sign_up"
+      redirect_to root_url
     else
       render :new
     end
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update_attributes user_params
-      flash[:success] = "Profile updated"
+      flash[:success] = t "user_controller.edit_info"
       redirect_to @user
     else
       render :edit
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
 
   def destroy
     if @user.destroy
-      flash[:success] = "User deleted"
+      flash[:success] = t "user_controller.delete_user"
       redirect_to users_url
     end
   end
@@ -55,7 +55,7 @@ class UsersController < ApplicationController
   def logged_in_user
     unless logged_in?
       store_location
-      flash[:danger] = "Please log in."
+      flash[:danger] = t "user_controller.require_log_in"
       redirect_to login_url
     end
   end
@@ -63,7 +63,7 @@ class UsersController < ApplicationController
   def find_user
     @user = User.find_by id: params[:id]
     if @user.nil?
-      flash[:danger] = "User not exist"
+      flash[:danger] = t "user_controller.cant_find_user"
       redirect_to root_url
     end
   end
