@@ -21,3 +21,21 @@
 
 en:
   hello: "Hello world"
+  mailer:
+    message_: "Welcome to Sample App"
+  message:
+    update: "Update your profile"
+    all_users: "All Users"
+    users_deleted: "Users deleted"
+    users_deleted!: "Users has not been deleted"
+    pl_log_in: "Please log in"
+    log_out: "Log out"
+    sure?: "You sure ?"
+    user_not_exist: "User not exist"
+  title:
+    users: "Users"
+    profile: "Profile"
+    settings: "Settings"
+  user_setting:
+    change: "Change"
+
