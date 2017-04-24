@@ -1,0 +1,28 @@
+vi:
+  hello: "Thich thi chao"
+  sessions:
+    create:
+      flash:
+        wrong_pw_email_login: "Sai mat khau hoac email"
+  users:
+    create:
+      flash:
+        checkemail: "Vui long kiem tra lai email de kich hoat tai khoan" 
+    update:
+      flash:
+        profile_updated: "Da update profile"
+    destroy:
+      flash:
+        users_destroyed: "Da xoa tai khoan"
+        cant_destroy: "Khong the xoa tai khoan"
+    edit:
+      flash:
+        loggin_first: "Ban phai dang nhap vao truoc"
+    show:
+      flash:
+        cant_find_user: "Khong the tim thay tai khoan"
+  account_activations:
+    edit:
+      flash:
+        success_activate: "Da kich hoat tai khoan"
+        invalid_activate: "Kiem tra lai link kich hoat"
