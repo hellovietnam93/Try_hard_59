@@ -21,3 +21,8 @@
 .byebug_history
 /config/database.yml
 /config/secrets.yml
+/config/settings/*.yml
+/config/environments/*.yml
+/config/settings.local.yml
+/config/settings/*.local.yml
+/config/environments/*.local.yml
