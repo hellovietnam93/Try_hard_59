@@ -25,6 +25,7 @@ vi:
     user_not_found: "Tài khoản không tìm thấy!"
     login: "Vui lòng đăng nhập"
     edit: "Bạn không thể chỉnh sửa tài khoản này"
+    checkmail: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
     form:
       confirm_pass: "Xác nhận"
       save_change: "Lưu thay đổi"
@@ -60,3 +61,20 @@ vi:
     new:
       signup: "Đăng ký ngay!"
       login: "Đăng nhập"
+  user_mailer:
+    account_activation:
+      title: "Ứng dụng mẫu"
+      content: "Chào mừng bạn đến với App mẫu! Nhấp vào liên kết dưới đây để
+        kích hoạt tài khoản của bạn:"
+      hi: "Chào "
+      activate: "Kích hoạt"
+    password_reset:
+      title: "Tài khoản#Mật khẩu tạo lại"
+      find: "tìm tôi tại app/views/user_mailer/password_reset.html.erb"
+  danger:
+    message1: "Tài khoản không được kích hoạt."
+    message2: "Kiểm tra email của bạn để biết liên kết kích hoạt."
+    message3: "Kết hợp email / mật khẩu không hợp lệ"
+    message4: "Liên kết kích hoạt không hợp lệ"
+  success:
+    message1: "Tài khoản kích hoạt!"

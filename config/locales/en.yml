@@ -25,6 +25,7 @@ en:
     user_not_found: "User not found!"
     login: "Please login"
     edit: "You can not edit user"
+    checkmail: "Please check your email to activate your account."
     form:
       confirm_pass: "Confirmation"
       save_change: "Save changes"
@@ -60,3 +61,19 @@ en:
     new:
       signup: "Sign up now!"
       login: "Log in"
+  user_mailer:
+    account_activation:
+      title: "Sample App"
+      content: "Welcome to the Sample App! Click on the link below to activate
+        your account:"
+      hi: "Hi "
+      activate: "Activate"
+    password_reset:
+      title: "User#password_reset"
+      find: "find me in app/views/user_mailer/password_reset.html.erb"
+  danger:
+    message: "Account not activated. Check your email for the activation link."
+    message3: "Invalid email/password combination"
+    message4: "Invalid activation link"
+  success:
+    message1: "Account activated!"
