@@ -55,7 +55,11 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    config (1.4.0)
+      activesupport (>= 3.0)
+      deep_merge (~> 1.1.1)
     debug_inspector (0.0.2)
+    deep_merge (1.1.1)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
@@ -164,6 +168,7 @@ DEPENDENCIES
   bootstrap-sass (= 3.3.6)
   byebug
   coffee-rails (~> 4.2)
+  config
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

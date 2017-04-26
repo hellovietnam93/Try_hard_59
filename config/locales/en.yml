@@ -39,6 +39,7 @@ en:
       sign_up_now: "Sign up now"
       login: "Log in"
       new_user: "New User?"
+      remember: "Remember me on this computer"
   layouts:
     header:
       sample_app: "Sample app"
