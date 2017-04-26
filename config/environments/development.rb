@@ -32,7 +32,7 @@ Rails.application.configure do
   host = "localhost:3000"
   config.action_mailer.default_url_options = {host: host, protocol: "http",
     locale: I18n.locale}
-  config.action_mailer.delivery_method = :test
+  config.action_mailer.delivery_method = :letter_opener
 
   config.action_mailer.perform_caching = false
 
