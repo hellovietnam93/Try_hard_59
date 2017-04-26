@@ -18,6 +18,7 @@ gem "bcrypt", "3.1.11"
 gem "faker", "1.6.6"
 gem "will_paginate", "3.1.0"
 gem "bootstrap-will_paginate", "0.0.10"
+gem "config"
 
 group :development, :test do
   gem "byebug", platform: :mri
@@ -28,6 +29,7 @@ group :development do
   gem "listen", "~> 3.0.5"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
+  gem "letter_opener"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

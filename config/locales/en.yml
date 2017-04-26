@@ -46,12 +46,20 @@ en:
     log_in: "Please log in."
     correct_user: "Not correct user"
     admin_user: "Not admin user"
+    email_notfound: "Email address not found"
+    expired: "Password reset has expired."
+    fail: "Password reset fail"
+  error:
+    reset_pass: "can't be empty"
   warning: "Account not activated. Check your email for the activation link."
-  info: "Please check your email to activate your account."
+  info:
+    activate: "Please check your email to activate your account."
+    reset_pass: "Email sent with password reset instructions"
   success:
     update: "Profile update"
     destroy: "User deleted"
     activate: "Account activated!"
+    reset: "Password has been reset."
   layout:
     header:
       english: "English"
@@ -63,3 +71,21 @@ en:
       setting: "Setting"
       login: "Log in"
       logout: "Log out"
+      account: "Account"
+  pass_reset:
+    reset: "Password reset"
+    edit:
+      title: "Reset password"
+      update: "Update Password"
+      confirm: "Confirmation"
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    mailer:
+      message1: "To reset your password click the link below:"
+      message2: "This link will expire in two hours."
+      message3: "If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is."
+  session:
+    new: "Sign up now!"
+    remember: "Remember me on this computer"
