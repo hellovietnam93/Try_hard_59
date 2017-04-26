@@ -1,0 +1,10 @@
+<tr>
+  <td><%= gravatar_for user, size: 50 %></td>
+  <td><%= link_to user.name, user %></td>
+  <td>
+    <% if current_user.admin? && !current_user.current_user?(user) %>
+      | <%= link_to t(".delete"), user, method: :delete,
+          data: {confirm: t(".confirm")} %>
+    <% end %>
+  </td>
+</tr>

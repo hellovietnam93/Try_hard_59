@@ -1,0 +1,62 @@
+vi:
+  static_pages:
+    home:
+      title: "Chào mừng bạn đến với ứng dụng mẫu"
+      signup: "Đăng ký ngay!"
+      note: "Đây là trang chủ của"
+      en: "Tiếng Anh"
+      vi: "Tiếng Việt"
+      header: "Trang chủ"
+    contact:
+      content: "Liên hệ với Hướng dẫn của Ruby on Rails về ứng dụng mẫu tại"
+      title: "Liên hệ"
+      contact_page: "trang liên kết"
+    help:
+      help1: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
+      help2: "Để được trợ giúp về ứng dụng mẫu này, hãy xem phần"
+      title: "Trợ giúp"
+    about:
+      title: "Thêm"
+  users:
+    welcome: "Chào mừng bạn đến với ứng dụng mẫu!"
+    profile_updated: "Hồ sơ cá nhân đã cập nhật"
+    user_deleted: "Tài khoản đã bị xóa"
+    delete_failed: "Xóa không thành công"
+    user_not_found: "Tài khoản không tìm thấy!"
+    login: "Vui lòng đăng nhập"
+    edit: "Bạn không thể chỉnh sửa tài khoản này"
+    form:
+      confirm_pass: "Xác nhận"
+      save_change: "Lưu thay đổi"
+    user:
+      delete: "xóa"
+      confirm: "Bạn chắc chắn?"
+    edit:
+      title: "Chỉnh sửa người dùng"
+      change: "Thay đổi"
+      update: "Cập nhật trang cá nhân"
+    index:
+      title: "Tất cả người dùng"
+      image: "Hình ảnh"
+      name: "Tên"
+    new:
+      title: "Đăng ký"
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+      users: "Người sử dụng"
+      logout: "Đăng xuất"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      name: "Ứng dụng mẫu"
+    footer:
+      about: "Thêm"
+      contact: "Liên hệ"
+      new: "Tin tức"
+  sessions:
+    new:
+      signup: "Đăng ký ngay!"
+      login: "Đăng nhập"
