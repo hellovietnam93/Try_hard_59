@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get "/:locale", to: "static_pages#home"
 
     resources :users
+    resources :account_activations, only: :edit
+    resources :password_resets, except: [:show, :index, :destroy]
   end
-  resources :account_activations, only: :edit
 end
