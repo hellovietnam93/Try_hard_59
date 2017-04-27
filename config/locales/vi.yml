@@ -61,6 +61,8 @@ vi:
     new:
       signup: "Đăng ký ngay!"
       login: "Đăng nhập"
+      remember: "Hãy nhớ tôi trên máy tính này"
+      forgot: "(Quên mật khẩu)"
   user_mailer:
     account_activation:
       title: "Ứng dụng mẫu"
@@ -69,12 +71,31 @@ vi:
       hi: "Chào "
       activate: "Kích hoạt"
     password_reset:
-      title: "Tài khoản#Mật khẩu tạo lại"
-      find: "tìm tôi tại app/views/user_mailer/password_reset.html.erb"
+      title: "Đặt lại mật khẩu"
+      message1: "Để đặt lại mật khẩu của bạn, nhấp vào liên kết dưới đây:"
+      reset: "Đặt lại mật khẩu"
+      message2: "Liên kết này sẽ hết hạn sau hai giờ."
+      message3: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua
+        email này và mật khẩu của bạn sẽ vẫn như cũ."
   danger:
-    message1: "Tài khoản không được kích hoạt."
-    message2: "Kiểm tra email của bạn để biết liên kết kích hoạt."
+    message: "Tài khoản không được kích hoạt.
+      Kiểm tra email của bạn để biết liên kết kích hoạt."
     message3: "Kết hợp email / mật khẩu không hợp lệ"
     message4: "Liên kết kích hoạt không hợp lệ"
   success:
     message1: "Tài khoản kích hoạt!"
+  password_resets:
+    email_warning: "Email được gửi bằng hướng dẫn đặt lại mật khẩu"
+    email_not_found: "Không tìm thấy địa chỉ email"
+    empty: "Không thể để trống"
+    success: "Mật khẩu đã được đặt lại."
+    failed: "Đặt lại mật khẩu đã hết hạn."
+    edit:
+      title: "Đặt lại mật khẩu"
+      submit: "Cập nhật mật khẩu"
+    new:
+      title: "Quên mật khẩu"
+      submit: "Tiến hành"
+  mailer:
+    activation: "Kích hoạt tài khoản"
+    password_reset: "Đặt lại mật khẩu"

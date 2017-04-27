@@ -61,6 +61,8 @@ en:
     new:
       signup: "Sign up now!"
       login: "Log in"
+      remember: "Remember me on this computer"
+      forgot: "(forgot password)"
   user_mailer:
     account_activation:
       title: "Sample App"
@@ -69,11 +71,30 @@ en:
       hi: "Hi "
       activate: "Activate"
     password_reset:
-      title: "User#password_reset"
-      find: "find me in app/views/user_mailer/password_reset.html.erb"
+      title: "Password reset"
+      message1: "To reset your password click the link below:"
+      reset: "Reset password"
+      message2: "This link will expire in two hours."
+      message3: "If you did not request your password to be reset, please
+        ignore this email and your password will stay as it is."
   danger:
     message: "Account not activated. Check your email for the activation link."
     message3: "Invalid email/password combination"
     message4: "Invalid activation link"
   success:
     message1: "Account activated!"
+  password_resets:
+    email_warning: "Email sent with password reset instructions"
+    email_not_found: "Email address not found"
+    empty: "can't be empty"
+    success: "Password has been reset."
+    failed: "Password reset has expired."
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+  mailer:
+    activation: "Account activation"
+    password_reset: "Password reset"
