@@ -19,6 +19,68 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 en:
-  static_pages:
-    home:
-      hello: "Welcome to the Sample App"
+  hello: "Hello world"
+  mailer:
+    title: "Sample App"
+    greeting: "Hi %{username},"
+    message: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate: "Activate"
+    activation: "Account activation"
+  password_reset:
+    hello: "Hi"
+    greeting: "<%= @greeting %>, find me in app/views/user_mailer/password_reset.text.erb"
+  warning:
+    activation: "Account not activated. Check your email for the activation link."
+  success:
+    activation: "Account activated!"
+    update: "Profile Updated!"
+    delete: "User deleted"
+  unsuccess:
+    delete: "User did not deleted!"
+  danger:
+    activation: "Invalid activation link"
+    email: "Invalid email/password combination"
+    find_user: "User %{param} not found!"
+    log_in: "Please log in."
+    access: "You are not allowed to access this page."
+  info:
+    activation: "Please check your email to activate your account."
+  link_to:
+    gravatar: "Gravatar"
+    sign_up_now: "Sign up now!"
+  other:
+    home: "Home"
+    h2: "This is the home page for the"
+    help: "Help"
+    contact: "Contact"
+    about: "About"
+    all_users: "All Users"
+    sign_up: "Sign Up"
+    new_user: "New User?"
+    log_in: "Log in"
+    remember: "Remember me on this computer"
+    user: "Users"
+    profile: "Profile"
+    setting: "Settings"
+    log_out: "Log out"
+    account: "Account"
+    news: "News"
+    sample: "Sample App"
+    about1: "<h1> About </h1>
+      <p>The
+            <a href=\"https://www.railstutorial.org\"> Ruby on Rails Tutorial </a>
+            is the <a href=\"https://www.railstutorial.org/book\"> book </a>
+            to teach web development with
+            <a href=\"http://rubyonrails.org/\"> Ruby On Rails </a>.
+            This is the sample application for the tutorial.</p>"
+    contact1: "<h1> Contact </h1>
+      <p>
+        Contact the Ruby on Rails Tutorial about the sample app at the
+        <a href=\"http://www.railstutorial.org/contact\"> contact page </a>.
+      </p>"
+    ruby_book: "Ruby on Rails Tutorial"
+    edit_user: "Edit user"
+    save_changes: "Save changes"
+    update_pro: "Update your profile"
+    create_account: "Create my account"
+    rails_logo: "Rails logo"

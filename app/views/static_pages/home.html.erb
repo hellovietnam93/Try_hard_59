@@ -1,16 +1,15 @@
 <div class="center jumbotron">
-  <h1><%= t ".hello" %></h1>
+  <h1><%= t "hello" %></h1>
 
   <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+    <%= t "other.h2" %>
+    <a href="http://www.railstutorial.org/"><%= t "other.ruby_book" %></a>
   </h2>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to t("link_to.sign_up_now"), signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
+<%= link_to image_tag("rails.png", alt: t("other.rails_logo")),
   "http://rubyonrails.org/" %>
 <%= link_to "English", locale:"en" %>
 <%= link_to "Vietnamese", locale:"vi" %>
