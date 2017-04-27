@@ -25,3 +25,7 @@ config/database.yml
 /Guardfile
 # Ignore Spring files.
 /spring/*.pid
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

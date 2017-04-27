@@ -1,0 +1,28 @@
+vi:
+  static_pages:
+    home:
+      welcome: "xin chào các bạn!"
+      english: "tiếng anh"
+      vietnamese: "tiếng việt"
+      home: "Trang chu"
+      signup: "Dang Nhap"
+  users:
+    _user:
+      sure: "Đồng ý?"
+    edit:
+      change: "thay đổi"
+      save: "lưu thay đổi"
+      edit: "chỉnh sửa"
+    index:
+      user: "tất cả người dùng"
+  controllers:
+    users_contronller:
+      welcome: "xin chào các bạn!"
+  sessions:
+    new:
+      login: "đăng nhập"
+      email: "địa chỉ email"
+      password: "mật khẩu"
+  layouts:
+    _header:
+      users: "người dùng"
