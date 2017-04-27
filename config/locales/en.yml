@@ -21,7 +21,13 @@
 
 en:
   hello: "Hello world"
+
   sessions:
+    new:
+      login: "Login"
+      remember_me: "Remember_me?"
+      new_user: "Create new user? Sign up now!"
+      forgot_password: "(forgot_password?)"
     create:
       flash:
         wrong_pw_email_login: "Invalid email/password combination"
@@ -47,3 +53,21 @@ en:
       flash:
         success_activate: "Account activated!"
         invalid_activate: "Invalid activation link"
+  password_resets:
+    cannot_find_email: "Can't find email"
+    new:
+      forgot_password: "Forgot Password"
+      submit_button: "Summit"
+    create:
+      flash:
+        email_rs_pw: "Email sent with password reset instructions"
+        email_not_found: "Email address not found"
+    edit:
+      title: "Reset Password"
+      summit_button: "Update password"
+      comfirmation: "Confirmation"
+    update:
+      error: "can't be empty"
+      flash:
+        success_rs_pw: "Password has been reset."
+        email_rs_expire: "Password reset has expired."
