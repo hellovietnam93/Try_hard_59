@@ -10,7 +10,7 @@ vi:
   password_reset:
     title: "Reset mật khẩu"
     hello: "Chào"
-    greeting: "Để reset password, hãy click vào link dưới đây:"
+    greeting: "Để reset mật khẩu, hãy click vào link dưới đây:"
     message: "Đường dẫn sẽ hết hạn sau 2 giờ.<br><br>
       Nếu bạn không yêu cầu reset mật khẩu, hãy bỏ qua email này và mật khẩu sẽ vẫn như cũ."
     reset: "Reset mật khẩu"
@@ -24,7 +24,9 @@ vi:
     activation: "Tài khoản đã kích hoạt!"
     update: "Đã cập nhật Profile!"
     delete: "Đã xóa tài khoản"
-    password_reset: "Password đã được thay đổi."
+    password_reset: "Mật khẩu đã được thay đổi."
+    micropost_delete: "Đã xóa bài viết"
+    micropost_create: "Đã tạo bài viết"
   danger:
     activation: "Đường dẫn kích hoạt không đúng!"
     email: "Sai email hoặc mật khẩu"
@@ -37,5 +39,11 @@ vi:
     activation: "Hãy kiểm tra email để lấy đường dẫn kích hoạt"
     password_reset: "Email đã được gửi"
   confirmation: "Xác nhận"
-  submit: "Submit"
-
+  submit: "Gửi"
+  placeholder:
+    new: "Tạo bài viết mới..."
+  error:
+    picture: "nên nhỏ hơn 5MB"
+  link_to:
+    profile: "hiển thị profile"
+  post: "Đăng"
