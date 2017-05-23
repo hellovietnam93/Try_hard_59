@@ -11,7 +11,14 @@ Rails.application.routes.draw do
     delete "/logout", to: "sessions#destroy"
     get "/:locale", to: "static_pages#home"
 
-    resources :users
+    resources :users do
+      member do
+        get :following, :followers
+      end
+    end
+    resources :password_resets, except: [:show, :index, :destroy]
+    resources :microposts, only: [:create, :destroy]
+    resources :relationships, only: [:create, :destroy]
   end
   resources :account_activations, only: :edit
 end
