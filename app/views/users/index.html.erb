@@ -1,0 +1,29 @@
+<% provide :title, "All users" %>
+<h1>All</h1>
+<div class = "table-responsive">
+  <%= will_paginate %>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope = "row">
+          <h3>#</h3>
+        </th>
+        <th>
+          <h3>Avatar</h3>
+        </th>
+        <th>
+          <h3>Name</h3>
+        </th>
+        <th>
+          <h3>Email</h3>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <ul class="users">
+        <%= render @users %>
+      </ul>
+    </tbody>
+  </table>
+  <%= will_paginate %>
+</div>
